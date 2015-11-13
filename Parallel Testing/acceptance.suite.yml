@@ -1,0 +1,82 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+class_name: WebGuy
+
+env:
+    p1:
+         modules:
+          enabled:
+            - WebDriver
+          config:
+            WebDriver:
+              url: 'http://www.google.com'
+              host: 'hub.browserstack.com'
+              port: 80
+              browser: chrome
+              capabilities:
+                'browserstack.user': '<username>'
+                'browserstack.key' : '<automate-key>'
+                'os' : 'Windows'
+                'os_version' : '10'
+                'browserstack.debug': 'true'
+                'build': 'Sample Codeception Tests'
+
+    p2:
+         modules:
+          enabled:
+            - WebDriver
+          config:
+            WebDriver:
+              url: 'http://www.google.com'
+              host: 'hub.browserstack.com'
+              port: 80
+              browser: firefox
+              capabilities:
+                'browserstack.user': '<username>'
+                'browserstack.key' : '<automate-key>'
+                'os' : 'OS X'
+                'os_version' : 'El Capitan'
+                'browserstack.debug': 'true'
+                'build': 'Sample Codeception Tests'
+
+
+    p3:
+         modules:
+          enabled:
+            - WebDriver
+          config:
+            WebDriver:
+              url: 'http://www.google.com'
+              host: 'hub.browserstack.com'
+              port: 80
+              browser: ie
+              capabilities:
+                'browserstack.user': '<username>'
+                'browserstack.key' : '<automate-key>'
+                'os': 'Windows'
+                'os_version': '8.1'
+                'browser_version': '11.0'
+                'browserstack.debug': 'true'
+                'build': 'Sample Codeception Tests'
+
+    p4:
+         modules:
+          enabled:
+            - WebDriver
+          config:
+            WebDriver:
+              url: 'http://www.google.com'
+              host: 'hub.browserstack.com'
+              port: 80
+              browser: safari
+              capabilities:
+                'browserstack.user': '<username>'
+                'browserstack.key' : '<automate-key>'
+                'os': 'OS X'
+                'os_version': 'Yosemite'
+                'browserstack.debug': 'true'
+                'build': 'Sample Codeception Tests'
