@@ -12,11 +12,11 @@ Run Codeception tests on BrowserStack. Sequentially and in parallel.
 
 4. To configure the test, open and edit _./tests/acceptance.suite.yml_ and copy the file from _Sample Tests/acceptance.suite.yml_.
 
-5. Go back to the parent folder and `run php codecept.phar build`.
+5. Execute `php codecept.phar build`.
 
 6. Lets write a test to search BrowserStack on Google. Open and edit file _./tests/acceptance/WelcomeCept.php_ and copy the file from _Sample Tests/WelcomeCept.php._
 
-7. To run a single test (on say Firefox), execute the command `php codecept.phar run --env Firefox`.
+7. To run a single test (on say Firefox), execute the command `php codecept.phar run --env firefox`.
 
 ### Sequential Runs
 

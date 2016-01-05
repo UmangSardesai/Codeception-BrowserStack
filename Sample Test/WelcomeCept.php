@@ -1,5 +1,5 @@
 <?php
-  $I = new WebGuy($scenario);
+  $I = new AcceptanceTester($scenario);
   $I->wantTo('Search Browserstack on Google');
   $I->amOnPage('/');
   $I->see('Google');
