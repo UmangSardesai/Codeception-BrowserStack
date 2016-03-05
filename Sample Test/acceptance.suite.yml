@@ -80,3 +80,39 @@ env:
                 'os_version': 'Yosemite'
                 'browserstack.debug': 'true'
                 'build': 'Sample Codeception Tests'
+                
+    ios:
+         modules:
+          enabled:
+            - WebDriver
+          config:
+            WebDriver:
+              url: 'http://www.google.com'
+              host: 'hub.browserstack.com'
+              port: 80
+              browser: iPhone
+              capabilities:
+                'browserstack.user': '<username>'
+                'browserstack.key' : '<automate-key>'
+                'platform': 'MAC'
+                'device': 'iPhone 6S'
+                'browserstack.debug': 'true'
+                'build': 'Sample Codeception Tests'
+
+    android:
+         modules:
+          enabled:
+            - WebDriver
+          config:
+            WebDriver:
+              url: 'http://www.google.com'
+              host: 'hub.browserstack.com'
+              port: 80
+              browser: android
+              capabilities:
+                'browserstack.user': '<username>'
+                'browserstack.key' : '<automate-key>'
+                'platform': 'ANDROID'
+                'device': 'Google Nexus 5'
+                'browserstack.debug': 'true'
+                'build': 'Sample Codeception Tests'
