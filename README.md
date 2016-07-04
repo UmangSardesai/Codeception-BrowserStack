@@ -38,7 +38,7 @@ You can follow these steps:
 
 2. Add the _composer.json_ file present under _Parallel Testing_ folder to the root directory of the project.
 
-3. Execute the command `composer.json install` to install the two components mentioned above.
+3. Execute the command `php composer.phar install` to install the two components mentioned above.
 
 4. Execute `Robo.phar` and press 'Y' to create an empty _RoboFile.php_.
 
